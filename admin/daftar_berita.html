@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SILOKERNF|Admin</title>
+
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+
+    <style>
+        /* navbar */
+        header ul li:nth-child(1){
+            border-left: none;   
+        }
+        header ul li{
+            border-left: 1px solid gray;   
+        }
+        /* navbar End*/
+
+        /* Content */
+        .menu{
+            background-color: royalblue; 
+            min-height: 500px;
+            color: rgb(255, 255, 255);
+        }
+        .menu a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        /* Content End */
+
+        @media only screen and (min-width:300px) and (max-width:1024px) {
+            /* navbar */
+            header ul li{
+                border-left: none;   
+            } 
+            /* navbar End*/
+        }
+    </style>
+</head>
+<body>
+
+    <!-- navbar -->
+    <header class="mt-5 mb-5">
+        <h2 class="text text-center font-weight-bold">Sistem Informasi Lowongan Kerja NF - SILOKERNF</h2>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../lowongan_baru.html">Lowongan Baru</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../isi_loker.html">Isi Loker</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../daftar_mitra.html">Daftar Mitra</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../berita.html">Berita</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <a class="nav-link" href="../login.html">Login</a>
+              </form>
+            </div>
+          </nav>
+    </header>
+    <!-- navbar End -->
+
+    <!-- Content -->
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ol class="breadcrumb float-right text-sm">
+                    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="admin.html">Admin</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Kelola Berita</li>
+                </ol>
+            </div>
+            
+            <div class="col-3 col-xs-3 col-sm-3 col-md-3 col-lg-3 pt-5 pl-4 menu">
+                <h5><b>Menu : </b></h5>
+                <ul>
+                    <li><a href="kelola_lowongan_kerja.html">Lowongan Kerja</a></li>
+                    <li><a href="kelola_mitra.html">Mitra</a></li>
+                    <li><a href="kelola_berita.html" >Isi Berita</a></li>
+                    <li><a href="" class="font-weight-bold">Daftar Berita</a></li>
+                </ul>
+            </div>
+
+            <div class="col-9 col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                    <h3><u>Daftar Berita</u></h3>
+                    <br>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <td>No</td>
+                                <td>Tanggal</td>
+                                <td>Judul</td>
+                                <td>Gambar</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>12 November 2020</td>
+                                <td>PT ABC</td>
+                                <td>Ahmad Fikri</td>
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+        <hr>
+    </div>
+    <!-- Content End -->
+
+
+    <!-- Footer -->
+    <footer class="container">
+        <div class="row">
+            <h7>Develop By Mahasiswa STT-NF @2021</h7>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+</body>
+</html>
