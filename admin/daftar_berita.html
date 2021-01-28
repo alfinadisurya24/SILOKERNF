@@ -112,32 +112,41 @@
                                 <td>Tanggal</td>
                                 <td>Judul</td>
                                 <td>Gambar</td>
+                                <td></td>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>13 November 2020</td>
-                                <td>STT Terpadu Nurul Fikri Teken MoU dengan P4GN BNN Jawa Barat (BNN Kota Depok) untuk menciptakan Kampus Bersinar (Bersih Narkoba)</td>
-                                <td><img class="img-fluid" src="../seminar.jpg"></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
                                 <td>18 Agustus 2020</td>
                                 <td>STT Terpadu Nurul Fikri Menyambut Mahasiswa Baru TA. 2020/2021 dengan Orientasi Akademik Secara Daring/Online</td>
                                 <td><img class="img-fluid" src="../zoom.jpg"></td>
+                                <td>
+                                    <button class="btn btn-success p-1 m-1" type="button" data-toggle="modal" data-target="#detailModal">Detail</button>
+                                    <button class="btn btn-primary p-1 m-1" type="button" data-toggle="modal" data-target="#editModal">Edit</button>
+                                    <button class="btn btn-danger p-1 m-1" type="button">Delete</button>
+                                </td>
                             </tr>
                             <tr>
-                                <td>3</td>
-                                <td>2 Oktober 2020</td>
-                                <td>GEMASTIK 2020 Mahasiswa STT Terpadu Nurul Fikri “TIK untuk Indonesia Maju”</td>
-                                <td><img class="img-fluid" src="../photo.jpg"></td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
                             </tr>
                             <tr>
-                                <td>4</td>
-                                <td>30 Juli 2020</td>
-                                <td>Kegiatan LDK Senada – Funday</td>
-                                <td><img class="img-fluid" src="../panah.jpg"></td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
                             </tr>
                         </tbody>
                     </table>
@@ -149,6 +158,112 @@
     </div>
     <!-- Content End -->
 
+    <div class="modal" id="editModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title">Edit Berita</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="tgl" class="col-12">Tanggal</label>
+                            <div class="col-12">
+                              <input type="text" class="form-control" id="tgl" value="13 November 2020" placeholder="* tanggal">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="judul" class="col-12">Judul</label>
+                            <div class="col-12">
+                              <input type="text" class="form-control" id="judul" value="STT Terpadu Nurul Fikri Menyambut Mahasiswa Baru TA. 2020/2021 dengan Orientasi Akademik Secara Daring/Online" placeholder="* judul">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="gambar" class="col-12">Gambar</label>
+                            <div class="col-12">
+                              <input type="file" class="form-control" id="gambar" placeholder="* Gambar">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="isi" class="col-12">Isi Berita</label>
+                            <div class="col-12">
+                                <textarea class="form-control" id="isi" name="isi" rows="10">
+Orientasi Akademik (Ormik) merupakan salah satu kegiatan yang diselenggarakan STT-NF untuk menyambut mahasiswa baru. Ormik diselenggarakan untuk memberikan pengetahuan kepada mahasiswa baru terkait dengan sejarah STT-NF, sistem perkuliahan, pelayanan mahasiswa, administrasi akademik, talkshow Alumni dan kegiatan mahasiswa seperti LFK, dan lain-lain.
+
+Ormik Tahun ini menyusung tema Ormik Epik dengan tujuannya membangun bersama generasi pemuda teknologi yang jujur, santun, berbudi taqwa dan profesional sejati. Taglinenya “Menginovasi dengan solusi, Adaptif secara aktif.” Ormik Tahun ini tentu berbeda dengan tahun-tahun sebelumnya. Di tengah pandemi Covid-19, Ormik Tahun ini diadakan secara online menggunakan Aplikasi Zoom dan terbagi menjadi 4 room.
+
+Ormik Tahun ini diikuti dengan kurang lebih sebanyak 400 mahasiswa baru, puluhan Panitia Ormik, para Dosen, dan Alumni STT-NF. STT-NF menyambut mahasiswa baru dengan Pra-Ormik terlebih dahulu yang diselenggarakan pada tanggal 25 September 2020. Sambutan Pra-Ormik sukses disampaikan oleh Ketua STT-NF yaitu Dr. Lukman Rosyidi, ST, M.M., M.T.
+
+Kemudian agenda Ormik diadakan selama 4 hari mulai tanggal 28 September 2020 hingga 1 Oktober 2020. Sesi pra-ormik dan agenda selama 4 hari Ormik telah berjalan dengan baik dan lancar. Adapun kesan dari salah satu mahasiswa baru mengatakan “Merasa berbeda dari yang lain/tahun sebelumnya, Ormik Tahun ini dilaksanakan secara online. Walaupun online acara Ormik kemarin tetap berjalan dengan lancar”. Ujar Wahid Wahyudin.
+
+Harapan untuk kedepannya, STT-NF akan terus menyelenggarakan kegiatan Ormik dengan kemasan yang lebih menarik lagi agar setiap mahasiswa baru dapat memulai perkuliahan nanti dengan penuh semangat dan suka cita. Selamat bergabung Mahasiswa Baru TA. 2020/2021 di Sekolah Tinggi Teknologi Terpadu Nurul Fikri. Tetap harus semangat untuk menempuh perkuliahan nanti ya.. 
+                                </textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                <button class="btn btn-primary" type="submit">Edit</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="detailModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title">Detail Lowongan Kerja</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    
+                    
+                    <p><b>Tanggal :</b></p>
+                    <p> 18 Agusuts 2020</p>
+                    <br>
+
+                    <p><b>Judul :</b></p>
+                    <p> STT Terpadu Nurul Fikri Menyambut Mahasiswa Baru TA. 2020/2021 dengan Orientasi Akademik Secara Daring/Online</p>
+                    <br>
+                    
+                    
+                    <p><b>Gambar :</b></p>
+                    <img class="img-fluid" src="../zoom.jpg">
+                    <br><br><br>
+
+                    
+                    <p><b>Isi Berita :</b></p>
+                    <textarea class="form-control" id="isi" name="isi" rows="10" disabled>
+Orientasi Akademik (Ormik) merupakan salah satu kegiatan yang diselenggarakan STT-NF untuk menyambut mahasiswa baru. Ormik diselenggarakan untuk memberikan pengetahuan kepada mahasiswa baru terkait dengan sejarah STT-NF, sistem perkuliahan, pelayanan mahasiswa, administrasi akademik, talkshow Alumni dan kegiatan mahasiswa seperti LFK, dan lain-lain.
+
+Ormik Tahun ini menyusung tema Ormik Epik dengan tujuannya membangun bersama generasi pemuda teknologi yang jujur, santun, berbudi taqwa dan profesional sejati. Taglinenya “Menginovasi dengan solusi, Adaptif secara aktif.” Ormik Tahun ini tentu berbeda dengan tahun-tahun sebelumnya. Di tengah pandemi Covid-19, Ormik Tahun ini diadakan secara online menggunakan Aplikasi Zoom dan terbagi menjadi 4 room.
+
+Ormik Tahun ini diikuti dengan kurang lebih sebanyak 400 mahasiswa baru, puluhan Panitia Ormik, para Dosen, dan Alumni STT-NF. STT-NF menyambut mahasiswa baru dengan Pra-Ormik terlebih dahulu yang diselenggarakan pada tanggal 25 September 2020. Sambutan Pra-Ormik sukses disampaikan oleh Ketua STT-NF yaitu Dr. Lukman Rosyidi, ST, M.M., M.T.
+
+Kemudian agenda Ormik diadakan selama 4 hari mulai tanggal 28 September 2020 hingga 1 Oktober 2020. Sesi pra-ormik dan agenda selama 4 hari Ormik telah berjalan dengan baik dan lancar. Adapun kesan dari salah satu mahasiswa baru mengatakan “Merasa berbeda dari yang lain/tahun sebelumnya, Ormik Tahun ini dilaksanakan secara online. Walaupun online acara Ormik kemarin tetap berjalan dengan lancar”. Ujar Wahid Wahyudin.
+
+Harapan untuk kedepannya, STT-NF akan terus menyelenggarakan kegiatan Ormik dengan kemasan yang lebih menarik lagi agar setiap mahasiswa baru dapat memulai perkuliahan nanti dengan penuh semangat dan suka cita. Selamat bergabung Mahasiswa Baru TA. 2020/2021 di Sekolah Tinggi Teknologi Terpadu Nurul Fikri. Tetap harus semangat untuk menempuh perkuliahan nanti ya.. 
+                    </textarea>
+                    <br>
+                    
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="container">

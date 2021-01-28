@@ -126,7 +126,7 @@
                                 <td>fikri@gmail.com</td>
                                 <td>Programmer UI/UX</td>
                                 <td>
-                                    <button class="btn btn-success p-1 m-1" type="button">Detail</button>
+                                    <button class="btn btn-success p-1 m-1" type="button" data-toggle="modal" data-target="#detailModal">Detail</button>
                                     <button class="btn btn-primary p-1 m-1" type="button" data-toggle="modal" data-target="#editModal">Edit</button>
                                     <button class="btn btn-danger p-1 m-1" type="button">Delete</button>
                                 </td>
@@ -173,7 +173,7 @@
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
-                <h4 class="modal-title">Edit Mitra</h4>
+                <h4 class="modal-title">Edit Lowongan Kerja</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <!-- Modal body -->
@@ -225,6 +225,51 @@
                 <!-- Modal footer -->
                 <div class="modal-footer">
                 <button class="btn btn-primary" type="submit">Edit</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="detailModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title">Detail Lowongan Kerja</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    
+                    
+                    <p><b>Tanggal :</b></p>
+                    <p> 12 November 2020</p>
+                    <br>
+
+                    <p><b>Nama Perusahaan :</b></p>
+                    <p> PT ABC</p>
+                    <br>
+                    
+                    
+                    <p><b>Kontak Person :</b></p>
+                    <p> Ahmad Fikri</p>
+                    <br>
+
+                    
+                    <p><b>Email :</b></p>
+                    <p> fikri@gmail.com</p>
+                    <br>
+
+                    
+                    <p><b>Deskripsi Lowongan :</b></p>
+                    <p> Programmer UI/UX</p>
+                    <br>
+                    
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
         
